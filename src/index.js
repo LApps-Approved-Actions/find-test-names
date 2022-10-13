@@ -514,7 +514,7 @@ function filterByEffectiveTags(structure, tag) {
 
   const filteredTests = []
   visitEachTest(structure, (test) => {
-    if (shouldTestRunTags(tags, test.effectiveTags) {
+    if (shouldTestRunTags(tags, test.effectiveTags)) {
       filteredTests.push(test)
     }
   })
